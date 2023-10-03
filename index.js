@@ -28,7 +28,7 @@ app.get('/txt', (req, res) => {
 });
 
 app.get('/api/txt', (req, res) => {
-    res.sendFile('matriz.txt', { root: __dirname });
+    res.sendFile('public','matriz.txt', { root: __dirname });
 });
 
 app.listen(3000, () => console.log('Server running on port 3000'));
