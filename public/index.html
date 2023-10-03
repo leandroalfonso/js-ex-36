@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Produtos</title>
+    <style>
+        /* Estilos CSS aqui */
+    </style>
+</head>
+
+<body>
+    <h1>Lista de Produtos</h1>
+    <ul id="produtos-lista"></ul>
+
+    <script>
+        const produtosLista = document.getElementById('produtos-lista');
+
+        fetch('http://localhost:3000/api/produtos')
+            .then(response => response.json())
+            .then(produtos => {
+                produtos.forEach(produto => {
+                    const itemLista = document.createElement('li');
+                    itemLista.textContent = `ID: ${produto.id}, Nome: ${produto.nome}, Preço: ${produto.preco}`;
+                    produtosLista.appendChild(itemLista);
+                });
+            })
+            .catch(error => {
+                console.error('Erro:', error);
+                const erroItem = document.createElement('li');
+                erroItem.textContent = 'Erro ao obter a lista de produtos.';
+                produtosLista.appendChild(erroItem);
+            });
+    </script>
+</body>
+
+</html>
