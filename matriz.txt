@@ -1,0 +1,19 @@
+tempo de atendimento -> Fraqueza 66% RUIM
+tempo de pagamento -> Fraqueza 69% RUIM
+temperatura do café -> Força 46% BOM
+sabor dos produtos -> Força 67% BOM
+outros produtos da cafeteria -> Força  70% BOM
+limpeza das mesas -> Força 80% BOM
+ambiente limpo e saudável -> Força 64% ÓTIMO
+local do estabelecimento -> Força 85% BOM
+preço -> Força 67% BOM
+
+equipamentos -> Força 
+manutenção -> Ameaça
+uniforme -> Força
+local de trabalho -> Força
+treinamento -> Fraqueza
+reconhecimento -> Ameaça
+supervisão -> Fraqueza
+equipe -> Fraqueza
+clima interno -> ameaça

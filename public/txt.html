@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>matriz.txt</title>
+</head>
+<body>
+    <pre id="matriz-content"></pre>
+
+    <script>
+        fetch('/api/txt')
+            .then(response => response.text())
+            .then(text => {
+                document.getElementById('matriz-content').textContent = text;
+            })
+            .catch(error => {
+                console.error('Erro:', error);
+            });
+    </script>
+</body>
+</html>
